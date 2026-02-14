@@ -1,2 +1,153 @@
-# camillavalentine
-valentines
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дружеская валентинка ❤️</title>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: linear-gradient(145deg, #fbc2c2 0%, #f8e0b0 100%);
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 16px;
+            box-sizing: border-box;
+        }
+
+        .card {
+            max-width: 500px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(4px);
+            border-radius: 40px;
+            padding: 32px 24px;
+            box-shadow: 0 25px 40px rgba(0, 0, 0, 0.2),
+                        0 0 0 2px #fff9e6 inset,
+                        0 0 0 4px #ffb6c1 inset;
+            text-align: center;
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.02) rotate(0.5deg);
+        }
+
+        .emoji-big {
+            font-size: 64px;
+            line-height: 1.2;
+            margin-bottom: 8px;
+            filter: drop-shadow(0 6px 8px rgba(255, 105, 135, 0.4));
+        }
+
+        h1 {
+            font-size: 42px;
+            font-weight: 800;
+            margin: 12px 0 8px;
+            background: linear-gradient(135deg, #c43e3e, #e08938);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -0.5px;
+            text-shadow: 0 2px 10px rgba(255, 140, 140, 0.3);
+        }
+
+        .sub {
+            font-size: 28px;
+            font-weight: 600;
+            color: #9e5f2c;
+            margin: 8px 0 16px;
+            background: #fff0d4;
+            display: inline-block;
+            padding: 8px 24px;
+            border-radius: 60px;
+            box-shadow: 0 4px 0 #d4a373;
+        }
+
+        .message {
+            font-size: 24px;
+            color: #422013;
+            background: rgba(253, 237, 213, 0.7);
+            padding: 24px 18px;
+            border-radius: 60px 60px 30px 30px;
+            margin: 20px 0 25px;
+            line-height: 1.5;
+            border: 3px dashed #ff9f7c;
+        }
+
+        .message span {
+            display: block;
+            font-size: 36px;
+            margin-bottom: 12px;
+        }
+
+        .friendship-signature {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            font-size: 36px;
+            margin: 20px 0 10px;
+            filter: drop-shadow(0 4px 4px #ffbca3);
+        }
+
+        .footer {
+            font-size: 22px;
+            color: #9b4b2e;
+            background: #ffe0c0;
+            padding: 12px 20px;
+            border-radius: 50px;
+            display: inline-block;
+            margin-top: 8px;
+            font-weight: 600;
+            border: 2px solid white;
+        }
+
+        .heart {
+            color: #ff4d6d;
+            font-size: 32px;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <!-- большие эмоджи дружбы -->
+        <div class="emoji-big">
+            🤝 🫂 ✨
+        </div>
+
+        <h1>С Днём святого Валентина!</h1>
+        <div class="sub">Для своего театрального друга 💛</div>
+
+        <div class="message">
+            <span>🗣️💬</span>
+            Улыбайся <br>
+            И будь всегда топчиком!<br>
+            Ценю нашу театральную дружбу бро ❤️‍🔥
+        </div>
+
+        <!-- рисуем две руки / сердечки дружбы -->
+        <div class="friendship-signature">
+            <span>🤜</span>
+            <span class="heart">❤️</span>
+            <span>🤛</span>
+        </div>
+
+        <div class="footer">
+            От друга Soma 💪
+        </div>
+
+        <!-- маленький намёк на общие мемы / приколы (дружеский штрих) -->
+        <div style="margin-top: 20px; font-size: 20px; opacity: 0.8; color: #965a3e;">
+            ✨ 14 февраля — повод обнять друг друга ✨
+        </div>
+    </div>
+</body>
+</html>
